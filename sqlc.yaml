@@ -8,3 +8,10 @@ sql:
         package: "database"
         out: "database/generated"
         sql_package: "pgx/v5"
+        overrides:
+          - column: "companies.location"
+            go_type:
+              import: "github.com/twpayne/go-geom"
+              package: "geos"
+              pointer: true
+              type: "Point"

@@ -6,4 +6,5 @@ As simple as it sounds, Closely is a benefit club for small and local companies 
 
 1. Install the dependencies from `go.mod` with `go get`;
 2. Install [sql](https://docs.sqlc.dev/en/stable/overview/install.html);
+3. Install `libgeos-dev` (Debian-like systems, please refer to [go-geos GitHub](https://github.com/twpayne/go-geos) for more information);
 3. Run `sqlc generate` from the project root folder;
